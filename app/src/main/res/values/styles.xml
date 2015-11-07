@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1565C0</item>
+        <!--<item name="android:windowBackground">@android:color/white</item>-->
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+
+    <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+       <item name="android:windowTitleStyle">@style/dialog_title_style</item>
+
+    </style>
+
+
+    <style name="dialog_title_style" parent="android:Widget.TextView">
+        <item name="android:background">#2196F3</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+
+
+
+
+</resources>

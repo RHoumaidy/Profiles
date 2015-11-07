@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/cat_profile_title">
+
+        <EditTextPreference
+            android:title="@string/prifle_name_title"
+            android:summary="@string/profile_name_summary"
+            android:key="profile_name"/>
+        <ListPreference
+            android:title="@string/auto_activation_title"
+            android:key="auto_activation_mode"
+            android:entries="@array/auto_activation_mode_entries"
+            android:entryValues="@array/auto_activation_mode_entries_values"
+            android:summary="@string/auto_activation_summary"
+            android:defaultValue="0"/>
+
+        <MultiSelectListPreference
+            android:title="@string/repeating_days_title"
+            android:key="repeating_days"
+            android:entries="@array/repeating_day_entries"
+            android:entryValues="@array/repeating_day_entries_values"
+            android:defaultValue="@array/empty"
+            android:summary="@string/repeating_days_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cat_sound_title">
+
+        <ListPreference
+            android:title="@string/ring_mode_title"
+            android:summary="@string/ring_mode_summary"
+            android:key="ring_mode"
+            android:entries="@array/ring_mode_entries"
+            android:entryValues="@array/ring_mode_entries_values"
+            android:defaultValue="0"/>
+
+        <CheckBoxPreference
+            android:title="@string/change_ringtone_title"
+            android:key="change_ringtone_checkbox"
+            android:defaultValue="false"/>
+
+        <RingtonePreference
+            android:title="@string/choose_ringtone_title"
+            android:summary="Default"
+            android:key="ringtone_choose"
+            android:enabled="false"
+            android:ringtoneType="ringtone"
+            android:showDefault="true"
+            android:defaultValue=""/>
+        <CheckBoxPreference
+            android:title="@string/change_notification_title"
+            android:key="change_notification_checkbox"
+            android:defaultValue="false"/>
+
+        <RingtonePreference
+            android:title="@string/choose_notification_title"
+            android:summary="Default"
+            android:key="notification_choose"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:enabled="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cat_device_title">
+        <ListPreference
+            android:title="@string/change_wifi_title"
+            android:summary="@string/change_wifi_summary"
+            android:key="change_wifi"
+            android:entries="@array/wifi_entries"
+            android:entryValues="@array/wifi_entries_values"
+            android:defaultValue="0"/>
+        <ListPreference
+            android:title="@string/change_bluetooth_title"
+            android:summary="@string/change_bluetooth_summary"
+            android:key="change_bluetooth"
+            android:entries="@array/wifi_entries"
+            android:entryValues="@array/wifi_entries_values"
+            android:defaultValue="0"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
